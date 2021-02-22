@@ -11,8 +11,8 @@ export default defineConfig({
       // 字符串简写写法
       // '/foo': 'http://localhost:4567/foo',
       // 选项写法
-      '/EmfcHuNan': {
-        target: "http://localhost:8010",
+      '/HuNanSdl': {
+        target: "http://192.168.0.17:8036",
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/api/, '')
       },

@@ -1,13 +1,13 @@
 <template>
   <div>{{ testData }}</div>
-  <div>{{ axiosData }}</div>
+  <!-- <div>{{ axiosData }}</div> -->
 </template>
 <script>
 // import axios from 'axios'
 export default {
   data() {
     return {
-      testData: "teeeeeest",
+      testData: "login",
       axiosData:{}
     };
   },
@@ -17,7 +17,7 @@ export default {
       this.axios({
       method: "post",
       // url: "",
-      url: "/HuNanSdl/ElectricitySellingCtrl/getDate",
+      url: "",
       data: {},
     })
       .then((res) => {
@@ -30,7 +30,8 @@ export default {
     }
   },
   mounted() {
-    this.test()
+    // this.test()
+    this.$Cookies.set("biwork_token", '123');
   },
   watch: {},
 };
