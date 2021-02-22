@@ -16,8 +16,8 @@ export default {
       console.log(this)
       this.axios({
       method: "post",
-      // url: "/HuNanSdl/DataManageCtrl/getDate",
-      url: "/EmfcHuNan/ExponentialSynthesisCtrl/Time",
+      // url: "",
+      url: "",
       data: {},
     })
       .then((res) => {
